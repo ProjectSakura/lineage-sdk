@@ -1237,6 +1237,15 @@ public final class LineageSettings {
         /** @hide */
         public static final Validator KEY_EDGE_LONG_SWIPE_ACTION_VALIDATOR =
                 sHardwareKeyActionvalidator;
+              /**
+         * Action to perform when three fingers swipe. (Default is 0)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         */
+         public static final String KEY_THREE_FINGERS_SWIPE_ACTION = "key_three_fingers_swipe_action";
+
+        /** @hide */
+         public static final Validator KEY_THREE_FINGERS_SWIPE_ACTION_VALIDATOR =
+        sHardwareKeyActionvalidator;
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
@@ -2161,6 +2170,7 @@ public final class LineageSettings {
             VALIDATORS.put(KEY_APP_SWITCH_LONG_PRESS_ACTION,
                     KEY_APP_SWITCH_LONG_PRESS_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_EDGE_LONG_SWIPE_ACTION, KEY_EDGE_LONG_SWIPE_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_THREE_FINGERS_SWIPE_ACTION, KEY_THREE_FINGERS_SWIPE_ACTION_VALIDATOR);
             VALIDATORS.put(HOME_WAKE_SCREEN, HOME_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(ASSIST_WAKE_SCREEN, ASSIST_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(APP_SWITCH_WAKE_SCREEN, APP_SWITCH_WAKE_SCREEN_VALIDATOR);
