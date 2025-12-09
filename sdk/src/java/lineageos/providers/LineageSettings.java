@@ -1265,6 +1265,15 @@ public final class LineageSettings {
         /** @hide */
         public static final Validator KEY_EDGE_LONG_SWIPE_ACTION_VALIDATOR =
                 sHardwareKeyActionvalidator;
+              /**
+         * Action to perform when three fingers swipe. (Default is 0)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         */
+         public static final String KEY_THREE_FINGERS_SWIPE_ACTION = "key_three_fingers_swipe_action";
+
+        /** @hide */
+         public static final Validator KEY_THREE_FINGERS_SWIPE_ACTION_VALIDATOR =
+        sHardwareKeyActionvalidator;
 
         /**
          * Action to perform when three fingers swipe action is detected. (Default is 0)
